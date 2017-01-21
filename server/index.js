@@ -1,11 +1,25 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var cors = require('cors');
-var massive = require('massive');
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const massive = require('massive');
 
-var app = module.exports = express();
+const app = module.exports = express();
+
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use(express.static('./public'));
+
+//database
+const massiveInstance = massive.connectSync({connectionString : process.env.connectionString});
+app.set('db', massiveInstance);
+const db = app.get('db');
+const serverController = require('./serverCtrl.js');
+
+
+
+
 
 // app.get('/test', function(req, res, next) {
 //   res.status(200).send('got it');
