@@ -1,7 +1,7 @@
 create table products(
   id serial primary key not null,
-  name text varchar(70),
-  description text varchar(180),
+  name varchar(70),
+  description varchar(180),
   price money,
   type varchar(20)
 );

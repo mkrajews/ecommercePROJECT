@@ -12,11 +12,10 @@ app.use(cors());
 app.use(express.static('./public'));
 
 //database
-const massiveInstance = massive.connectSync({connectionString : process.env.connectionString});
-app.set('db', massiveInstance);
-const db = app.get('db');
+// const massiveInstance = massive.connectSync({connectionString : process.env.connectionString});
+// app.set('db', massiveInstance);
+// const db = app.get('db');
 const serverController = require('./serverCtrl.js');
-
 
 
 
@@ -32,24 +31,19 @@ app.get('/products', function(req, res, next) {
 })
 // find particular product
 app.get('/products/:product', function(req, res, next) {
-
 })
 // POST ENDPOINTS:
 // create product
 app.post('/products', function(req, res, next) {
-
 })
 // PUT ENDPOINTS:
 // update product
 app.put('/products/:id', function(req, res, next) {
-
 })
 // DELETE ENDPOINTS:
 // delete product
 app.delete('/products/:id', function(req, res, next) {
-
 })
-
 
 
 
