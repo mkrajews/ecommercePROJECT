@@ -16,7 +16,13 @@
 <body ng-controller="homeCtrl">
   <button ng-click="getAllProducts()">Click me for Cool Stuff</button>
   <div class="stuff" ng-repeat="stuff in products">
-    Test
+    <ul>
+      <li>Name: {{stuff.name}}</li>
+      <li>Price: {{stuff.price}}</li>
+      <li>Type: {{stuff.type}}</li>
+      <li>Description: {{stuff.description}}</li>
+
+    </ul>
   </div>
 
 
