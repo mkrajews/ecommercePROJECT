@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ecommerce App</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="/app/app.module.js"></script>
+<script src="/app/component/home/homeCtrl.js"></script>
+<script src="/app/component/home/homeSvc.js"></script>
+
+</head>
+
+<body ng-controller="homeCtrl">
+  <button ng-click="getAllProducts()">Click me for Cool Stuff</button>
+  <div class="stuff" ng-repeat="stuff in products">
+    Test
+  </div>
+
+
+</body>
+</html>
