@@ -2,12 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
-const constring = 'postgres://abmfdxmt:EujkUYAgdhfidxI8mLNX6sRIKUl-l5fE@elmer.db.elephantsql.com:5432/abmfdxmt';
+const constring = require ("../public/config.js")
 
 // double here:
 const app = module.exports = express();
 const massiveInstance = massive.connectSync({
-  connectionString: constring
+  connectionString: constring.db
 });
 app.set('db', massiveInstance);
 const db = app.get('db');
@@ -37,7 +37,7 @@ const serverController = require('./serverCtrl.js');
 
 // get all products
 app.get('/products', function(req, res, next) {
-  // res.send('see?');
+  // res.send('yea?');
   db.get_all_products(function(err, products) {
     res.status(200).json(products);
   });
