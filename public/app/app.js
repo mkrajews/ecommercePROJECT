@@ -13,6 +13,10 @@ angular.module('app', ['ui.router'])
                 templateUrl: './app/component/about/about.html',
                 controller: 'abtCtrl'
             })
+            .state('admin', {
+                url: '/admin',
+                templateUrl: './app/component/admin/admin.html'
+            })
             .state('myAccount', {
                 url: '/myAccount',
                 templateUrl: './app/component/myAccount/myAccount.html',
