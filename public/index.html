@@ -6,16 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ecommerce App</title>
 
+<!-- angular scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
 
+<!-- js scripts -->
   <script src="app/app.routes.js"></script>
   <script src="app/app.js"></script>
 
-<script src="app/app.module.js"></script>
+<!-- <script src="app/app.module.js"></script> -->
+
+<!-- controller scripts -->
 <script src="/app/component/home/homeCtrl.js"></script>
+<script src="/app/component/about/abtCtrl.js"></script>
+<script src="/app/component/shop/shopCtrl.js"></script>
+
+
+<!-- service scripts -->
 <script src="app/component/home/homeSvc.js"></script>
+
+<!-- style links -->
+<link href="/app/component/home/homeStyle.css" rel="stylesheet">
+<link href="/app/component/about/about.css" rel="stylesheet">
+<link href="/app/component/shop/shop.css" rel="stylesheet">
+
+
 
 
 
@@ -24,7 +39,11 @@
 </head>
 
 <body ng-controller="homeCtrl">
-  <button ng-click="getAllProducts()">Click me for Cool Stuff</button>
+  <!-- <div class='headerBkgrnd'>
+
+  </div> -->
+
+  <button ng-click="getAllProducts()">Click me for Products</button>
   <div class="stuff" ng-repeat="stuff in products">
     <ul>
       <li>Name: {{stuff.name}}</li>

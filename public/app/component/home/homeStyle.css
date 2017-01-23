@@ -1,0 +1,9 @@
+  body {
+  background: url(/assets/img/fushimi.jpg) ;
+  /*no-repeat center center fixed;*/
+  height: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
