@@ -6,6 +6,6 @@ angular.module('app').controller('homeCtrl', function($scope, homeSvc) {
           // console.log(response);
           $scope.products = response;
       });
-  }
+  };
   // $scope.getAllProducts();
 });

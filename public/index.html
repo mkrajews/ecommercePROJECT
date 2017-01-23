@@ -6,10 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ecommerce App</title>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-<script src="/app/app.module.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+
+  <script src="app/app.routes.js"></script>
+  <script src="app/app.js"></script>
+
+<script src="app/app.module.js"></script>
 <script src="/app/component/home/homeCtrl.js"></script>
-<script src="/app/component/home/homeSvc.js"></script>
+<script src="app/component/home/homeSvc.js"></script>
+
+
+
+
 
 </head>
 
@@ -24,6 +34,24 @@
 
     </ul>
   </div>
+
+<div>
+  <a href="/#/">
+    <h2>INDEX HTML</h2>
+  </a>
+
+</div>
+
+<ui-view></ui-view>
+
+
+  <div>
+          <!-- <span ></span> -->
+          <!-- <div  class="btn" ui-sref="home">button2</div> -->
+          <a ui-sref="about">About</a>
+          <!-- <div  class="btn" ui-sref="myAccount">button</div> -->
+      </div>
+
 
 
 </body>
