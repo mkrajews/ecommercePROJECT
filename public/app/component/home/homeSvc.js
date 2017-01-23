@@ -5,7 +5,7 @@ angular.module('app').service('homeSvc', function($http) {
       method: 'GET',
       url: '/products'
     }).then(function(response) {
-        return response.data;
+      return response.data;
     });
   };
 });

@@ -31,32 +31,35 @@
 
 <body ng-controller="homeCtrl">
 
-  <button ng-click="getAllProducts()">Click me for Products</button>
-  <div class="stuff" ng-repeat="stuff in products">
+  <div>
+    <a href="/#/"><h3>INDEX HTML</h3></a>
+  </div>
+
+  <div>
+    <span>
+      <a ui-sref="about"><h3>ABOUT</h3></a>
+    </span>
+  </div>
+  <br>
+
+
+  <button ng-click="getAllProducts()">Click for Products</button>
+  <br><br>
+
+  <input ng-model="stuffFilterText" placeholder="Search">
+  <br>
+  <div class="stuff" ng-repeat="product in products | filter: stuffFilterText">
     <ul>
-      <li>Name: {{stuff.name}}</li>
-      <li>Price: {{stuff.price}}</li>
-      <li>Type: {{stuff.type}}</li>
-      <li>Description: {{stuff.description}}</li>
+      <li>Name: {{product.name}}</li>
+      <li>Price: {{product.price}}</li>
+      <li>Type: {{product.type}}</li>
+      <li>Description: {{product.description}}</li>
 
     </ul>
   </div>
-
-  <div>
-    <a href="/#/">
-      <h2>INDEX HTML</h2>
-    </a>
-
-  </div>
+  <br>
 
   <ui-view></ui-view>
-
-
-  <div>
-    <!-- <span ></span> -->
-    <a ui-sref="about">About</a>
-  </div>
-
 
 
 </body>

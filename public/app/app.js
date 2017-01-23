@@ -8,12 +8,11 @@ angular.module('app', ['ui.router'])
                 // templateUrl: 'index.html',
                 controller: 'homeCtrl'
             })
-        .state('about', {
-          // template: '<h2>ABOUT page</h2>',
-            url: '/about',
-            templateUrl: './app/component/about/about.html',
-            controller: 'abtCtrl'
-        })
+            .state('about', {
+                url: '/about',
+                templateUrl: './app/component/about/about.html',
+                controller: 'abtCtrl'
+            });
 
         // .state('myAccount', {
         //     url: '/myAccount',
