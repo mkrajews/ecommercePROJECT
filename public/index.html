@@ -49,7 +49,7 @@
 
   <button ng-click="getAllProducts()">Click for Products</button>
   <br><br>
-  <!-- just filter on the name? -->
+  <!-- just filter on the name: -->
   <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
   <input ng-model="productFilterText" placeholder="Search">
     <br>
@@ -59,8 +59,8 @@
       <li>Price: {{product.price}}</li>
       <li>Type: {{product.type}}</li>
       <li>Description: {{product.description}}</li>
-
     </ul>
+    <button ng-click="addToCart()">Add to Cart</button>
   </div>
     <br>
 

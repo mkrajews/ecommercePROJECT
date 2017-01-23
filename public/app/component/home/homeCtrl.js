@@ -8,4 +8,14 @@ angular.module('app').controller('homeCtrl', function($scope, homeSvc) {
       });
   };
   // $scope.getAllProducts();
+
+
+
+
+  $scope.addProductToCart = () => {
+    homeSvc.addToCart().then((res) => {
+      console.log(response + "addToCart resp" + res.data);
+      // $scope.products = response;
+    });
+  };
 });

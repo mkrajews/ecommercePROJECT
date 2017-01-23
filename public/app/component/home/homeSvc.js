@@ -8,4 +8,14 @@ angular.module('app').service('homeSvc', function($http) {
       return response.data;
     });
   };
+
+
+
+this.addToCart = function () {
+  return $http({
+    method: 'POST',
+    url: '/addToCart'
+  });
+};
+
 });

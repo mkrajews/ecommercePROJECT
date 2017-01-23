@@ -17,6 +17,10 @@ angular.module('app', ['ui.router'])
                 url: '/admin',
                 templateUrl: './app/component/admin/admin.html'
             })
+            .state('cart', {
+                url: '/cart',
+                templateUrl: './app/component/admin/admin.html'
+            })
             .state('myAccount', {
                 url: '/myAccount',
                 templateUrl: './app/component/myAccount/myAccount.html',

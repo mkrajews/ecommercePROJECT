@@ -51,6 +51,12 @@ app.get('/products/name/:name', function(req, res, next) {
 // create product
 app.post('/products', function(req, res, next) {
 })
+// add to cart
+app.post('/addToCart', function(req, res, next) {
+  db.add_product_to_cart(function(err, products) {
+    res.status(200)
+  })
+})
 // update product
 app.put('/products/:id', function(req, res, next) {
 })
