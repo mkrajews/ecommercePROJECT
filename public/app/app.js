@@ -12,12 +12,11 @@ angular.module('app', ['ui.router'])
                 url: '/about',
                 templateUrl: './app/component/about/about.html',
                 controller: 'abtCtrl'
+            })
+            .state('myAccount', {
+                url: '/myAccount',
+                templateUrl: './app/component/myAccount/myAccount.html',
+                controller: 'accountCtrl'
             });
-
-        // .state('myAccount', {
-        //     url: '/myAccount',
-        //     templateUrl: './app/component/myAccount.html',
-        //     // controller: 'storedArtCtrl'
-        // });
 
     });
