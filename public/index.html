@@ -45,10 +45,11 @@
 
   <button ng-click="getAllProducts()">Click for Products</button>
   <br><br>
-
-  <input ng-model="stuffFilterText" placeholder="Search">
+  <!-- just filter on the name? -->
+  <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
+  <input ng-model="productFilterText" placeholder="Search">
   <br>
-  <div class="stuff" ng-repeat="product in products | filter: stuffFilterText">
+  <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: '-price'">
     <ul>
       <li>Name: {{product.name}}</li>
       <li>Price: {{product.price}}</li>
