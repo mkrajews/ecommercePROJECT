@@ -7,7 +7,7 @@ angular.module('app').controller('accountCtrl', function($scope, accountSvc) {
         $scope.products = response;
       });
   };
-  $scope.getCartProducts();
+  // $scope.getCartProducts();
 
 
 

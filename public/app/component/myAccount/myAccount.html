@@ -1,7 +1,19 @@
+<!-- <div ng-controller="accountCtrl"> -->
 <div>
   <h3>My Account View:</h3> (Is this also my cart view? hmm) <br><br>
 
   <button ng-click="getCartProducts()">Show My Cart Items Plz</button>
+    <div ng-repeat="product in products">
+      <ul>
+        <li>product id: {{product.products_id}}</li>
+      </ul>
+
+    </div>
+
+
+
+
+
 
   <div ng-show="cart.product_id.length === 0">
     <div>Your Cart is empty</div>

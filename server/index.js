@@ -37,19 +37,26 @@ const serverController = require('./serverCtrl.js');
 
 // get all products
 app.get('/products', function(req, res, next) {
-  // res.send('yea?');
+    // res.send('yea?');
   db.get_all_products(function(err, products) {
     res.status(200).json(products);
   });
 });
-
-
 // find particular product
 app.get('/products/name/:name', function(req, res, next) {
   db.get_product_by_name(req.params.name, function(err, product) {
     res.status(200).send(product);
   });
 });
+// get cart items
+app.get('/getCart', function(req, res, next) {
+  db.get_cart(function(err, products) {
+    console.log('get /getCart');
+    res.status(200).json(products);
+  });
+});
+
+
 // create product
 app.post('/products', function(req, res, next) {
 });
