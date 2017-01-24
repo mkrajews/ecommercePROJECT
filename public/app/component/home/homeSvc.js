@@ -11,11 +11,15 @@ angular.module('app').service('homeSvc', function($http) {
 
 
 
-this.addToCart = function () {
-  return $http({
-    method: 'POST',
-    url: '/addToCart'
-  });
-};
+  this.addToCart = function(product) {
+    return $http({
+      method: 'POST',
+      url: '/addToCart',
+      data: product
+      // ^since its already an object, can just say 'product'
+    }).then(function(response) {
+      console.log(response.data);
+    });
+  };
 
 });

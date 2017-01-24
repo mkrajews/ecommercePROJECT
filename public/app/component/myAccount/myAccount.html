@@ -1,18 +1,20 @@
 <div>
-  <h3>My Account View:</h3> (Is this also my cart view? hmm) <br><br> 
+  <h3>My Account View:</h3> (Is this also my cart view? hmm) <br><br>
 
-  <div ng-show="cart.items.length === 0">
+  <button ng-click="getCartProducts()">Show My Cart Items Plz</button>
+
+  <div ng-show="cart.product_id.length === 0">
     <div>Your Cart is empty</div>
   </div>
-  <div ng-hide="cart.items.length === 0">
+  <div ng-hide="cart.product_id.length === 0">
     <div class="list">
-      <div class="item item-thumbnail-left" ng-repeat="item in cart.items">
-        <img ng-src="{{item.images[0]}}">
-        <h2>{{ item.name }}</h2>
-        <h4>$ {{ item.price }}</h4>
+      <div class="item item-thumbnail-left" ng-repeat="product in cart.product_id">
+        <img ng-src="{{product.image[0]}}">
+        <h2>{{ product_id.name }}</h2>
+        <h4>$ {{ product_id.price }}</h4>
         <div>
           <a class="ion ion-plus"></a>
-          {{item.quantity}}
+          {{product_id.quantity}}
           <a class="ion ion-minus"></a>
         </div>
       </div>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ecommerce Nekoshin App</title>
+  <title>Ecommerce Nekoshin</title>
 
   <!-- angular scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
@@ -23,6 +23,8 @@
 
   <!-- service scripts -->
   <script src="app/component/home/homeSvc.js"></script>
+  <script src="app/component/myAccount/accountSvc.js"></script>
+
 
   <!-- style links -->
   <link href="/app/component/home/homeStyle.css" rel="stylesheet">
@@ -60,7 +62,7 @@
       <li>Type: {{product.type}}</li>
       <li>Description: {{product.description}}</li>
     </ul>
-    <button ng-click="addToCart()">Add to Cart</button>
+    <button ng-click="addToCart(product)">Add to Cart</button>
   </div>
     <br>
 
