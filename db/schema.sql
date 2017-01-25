@@ -12,15 +12,17 @@ create table cart(
   products_id integer references products,
 );
 
-create table user(
-  id serial,
-  name varchar(70),
-  cart_id references cart
-);
-
 create table orders(
   id serial,
   cart_id integer,
   total money,
   products_id integer
+);
+
+create table user(
+  user_id serial,
+  username varchar(70),
+  password text,
+  fb_id text,
+  cart_id integer references cart
 );

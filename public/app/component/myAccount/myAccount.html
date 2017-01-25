@@ -1,16 +1,34 @@
 <div style="background-color:gray; text-align:center;">
+  <br><br><br>
+
+  <br> LOGIN: <br>
+  <input type="text" placeholder="Email"> <br>
+  <input type="text" placeholder="Password"> <br> Forgot your password? <br>
+  <button>Sign In</button>
+  <br> -----
+  <br> CREATE ACCOUNT: <br>
+
+  <input type="text" placeholder="First Name"> <br>
+  <input type="text" placeholder="Last Name"> <br>
+  <input type="text" placeholder="Email"> <br>
+  <input type="text" placeholder="Password"> <br>
+  <button>Create</button>
+  <br><br> ----- <br>
+
+
+
   <h3>My Account View:</h3> (Is this also my cart view? hmm) <br><br>
 
   <button ng-click="getCartProducts()">Show My Cart Items Plz</button>
-    <div ng-repeat="product in products">
-      <ul>
-        <li>product id: {{product.products_id}}</li>
-      </ul>
+  <div ng-repeat="product in products">
+    <ul>
+      <li>product id: {{product.products_id}}</li>
+    </ul>
 
-    </div>
-<br>
-    <button>Purchase Now</button> (STRIPE)
-
+  </div>
+  <br>
+  <button>Purchase Now</button> (STRIPE)
+  <br><br>
 
 
 

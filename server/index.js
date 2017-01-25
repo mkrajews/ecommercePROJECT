@@ -2,7 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
-const constring = require ("../public/config.js")
+const constring = require ("../public/config.js");
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+// const config = require('./config.js');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+
 
 // double here:
 const app = module.exports = express();
@@ -11,7 +17,6 @@ const massiveInstance = massive.connectSync({
 });
 app.set('db', massiveInstance);
 const db = app.get('db');
-
 
 // app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -55,8 +60,6 @@ app.get('/getCart', function(req, res, next) {
     res.status(200).json(products);
   });
 });
-
-
 // create product
 app.post('/products', function(req, res, next) {
 });
@@ -67,17 +70,14 @@ app.post('/addToCart', function(req, res) {
     console.log('POST /addToCart');
   });
 });
-
-
-
-
-
 // update product
 app.put('/products/:id', function(req, res, next) {
 });
 // delete product
 app.delete('/products/:id', function(req, res, next) {
 });
+
+
 
 
 
