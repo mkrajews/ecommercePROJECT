@@ -26,3 +26,8 @@ create table user(
   fb_id text,
   cart_id integer references cart
 );
+
+-- update product row:
+--   UPDATE products
+-- SET image='https://upload.wikimedia.org/wikipedia/commons/3/38/Collapsible_top_hat_IMGP9662.jpg'
+-- WHERE id=3;

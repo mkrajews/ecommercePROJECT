@@ -9,6 +9,7 @@
   <br>
   <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
     <ul>
+      <img class="prodImg" src="{{product.image}}">
       <h4>{{product.name}}</h4>
       <li>Description: {{product.description}}</li>
       <li>Price: {{product.price}}</li>
