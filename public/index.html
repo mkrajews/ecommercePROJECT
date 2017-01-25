@@ -11,6 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <!-- js scripts -->
   <script src="app/routes.js"></script>
   <script src="app/app.js"></script>
@@ -32,43 +35,118 @@
   <link href="/app/component/shop/shop.css" rel="stylesheet">
 </head>
 
+
 <body ng-controller="homeCtrl">
 
-  <div>
-    <a href="/#/">Home/INDEX HTML</a>
-  </div>
-  <div>
-      <a ui-sref="about">About</a>
-  </div>
-  <div>
-    <a ui-sref="myAccount">My Account</a>
-  </div>
-  <div>
-    <a ui-sref="admin">Admin Only!</a>
-  </div>
+  <nav id="navbar-id" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand and toggle grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <div type="button" class="navbar-toggle cursor-crosshair" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only ">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </div>
+
+        <h3 style="margin-top:30px; margin-bottom:30px;" ui-sref="home">NekoShin</h3>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li style="margin-right:20px; margin-top:30px;"><input ng-model="productFilterText" placeholder="Search"></li>
+
+
+
+
+          <li class="nav-r">
+            <h4 style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn">Shop</h4>
+            <span class="tab-space"></span>
+          </li>
+
+          <li class="nav-r">
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>
+            <span class="tab-space"></span>
+          </li>
+
+          <li class="nav-r">
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="myAccount">Account</h4>
+            <span class="tab-space"></span>
+          </li>
+
+          <li class="nav-r">
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">Admin Only!</h4>
+            <span class="tab-space"></span>
+          </li>
+
+        </ul>
+      </div>
+      <div class="space"></div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+
+  <!-- <div>
+        <a href="/#/">Home/INDEX HTML</a>
+      </div>
+      <div>
+          <a ui-sref="about">About</a>
+      </div>
+      <div>
+        <a ui-sref="myAccount">My Account</a>
+      </div>
+      <div>
+        <a ui-sref="admin">Admin Only!</a>
+      </div> -->
   <br>
 
+<div id="bkgrndHeader"></div>
 
-  <button ng-click="getAllProducts()">Click for Products</button>
-  <br><br>
-  <!-- just filter on the name: -->
-  <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
-  <input ng-model="productFilterText" placeholder="Search">
-    <br>
-  <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: '-price'">
-    <ul>
-      <li>Name: {{product.name}}</li>
-      <li>Price: {{product.price}}</li>
-      <li>Type: {{product.type}}</li>
-      <li>Description: {{product.description}}</li>
-    </ul>
-    <button ng-click="addToCart(product)">Add to Cart</button>
-  </div>
-    <br>
+  <!-- <div style="margin:2%;">
+    <button ng-click="getAllProducts()">Click for Products</button>
+    <br><br> -->
 
-<!-- VIEW STATES -->
+    <!-- just filter on the name: -->
+    <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
+    <!-- <input ng-model="productFilterText" placeholder="Search"> -->
+
+    <!-- <br>
+    <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
+      <ul>
+        <h4>{{product.name}}</h4>
+        <li>Description: {{product.description}}</li>
+        <li>Price: {{product.price}}</li>
+        <li>Type: {{product.type}}</li>
+      </ul>
+      <button ng-click="addToCart(product)">Add to Cart</button>
+      <br><br><br>
+    </div>
+    <br>
+  </div> -->
+
+
+
+
+
+  <!-- VIEW STATES -->
   <ui-view></ui-view>
 
+
+
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <p href="#shop">Here</p>
 
 </body>
 

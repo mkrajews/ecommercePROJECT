@@ -5,7 +5,7 @@ angular.module('app', ['ui.router'])
         $stateProvider
             .state('home', {
                 url: '/',
-                // templateUrl: 'index.html',
+                templateUrl: './app/component/home/home.html',
                 controller: 'homeCtrl'
             })
             .state('about', {

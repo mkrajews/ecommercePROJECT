@@ -1,5 +1,9 @@
 .abtBkgrnd {
-  background-color:#D68189;
-  height:250px;
+  /*background-color:#D68189;*/
+  background: url(/assets/img/nekoshin.png);
+  height:800px;
   width:100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
