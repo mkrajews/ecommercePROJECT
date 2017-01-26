@@ -1,12 +1,16 @@
 <div id="bkgrndHeader"></div>
-
-<div style="margin:2%;">
+<br><br>
+<h2 style="text-align:center;">SHOP HERE</h2>
+<br>
+<div style="margin:2%; text-align:center;">
   <button ng-click="getAllProducts()">Click for Products</button>
   <br><br>
   <!-- just filter on the name: -->
   <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
   <!-- <input ng-model="productFilterText" placeholder="Search"> -->
   <br>
+  <div class="container">
+    <div class="row justify-content-around">
   <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
     <ul>
       <img class="prodImg" src="{{product.image}}">
@@ -19,4 +23,19 @@
     <br><br><br>
   </div>
   <br>
+  </div>
 </div>
+
+
+
+<!-- ROW EXAMPLE -->
+<!-- <div class="container">
+<div class="row justify-content-around">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+</div> -->

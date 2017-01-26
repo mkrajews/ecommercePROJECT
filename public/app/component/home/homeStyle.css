@@ -12,6 +12,16 @@
 }
 
 .prodImg {
-  height: 100px;
+  height: 200px;
   width: auto;
+}
+
+.prodImg:hover {
+  height: 300px;
+  width: auto;
+  /*background: gold;*/
+}
+
+.title:hover {
+  font-style: italic;
 }

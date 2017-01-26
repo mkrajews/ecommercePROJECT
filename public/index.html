@@ -14,6 +14,11 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   <!-- js scripts -->
   <script src="app/routes.js"></script>
   <script src="app/app.js"></script>
@@ -47,21 +52,22 @@
           <span class="sr-only ">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
         </div>
 
-        <h3 style="margin-top:30px; margin-bottom:30px;" ui-sref="home">NekoShin</h3>
+        <h3 style="margin-top:30px; margin-bottom:30px;" class="title" ui-sref="home">NekoShin</h3>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul  class="row justify-content-around">
+          <!-- class="nav navbar-nav navbar-right" -->
 
           <li style="margin-right:20px; margin-top:30px;"><input ng-model="productFilterText" placeholder="Search"></li>
 
 
 
 
-          <li class="nav-r">
+          <!-- <li class="nav-r">
             <h4 style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn">Shop</h4>
             <span class="tab-space"></span>
-          </li>
+          </li> -->
 
           <li class="nav-r">
             <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>

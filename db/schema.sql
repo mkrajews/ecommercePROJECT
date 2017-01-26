@@ -9,7 +9,7 @@ create table products(
 
 create table cart(
   id serial primary key not null,
-  products_id integer references products,
+  products_id integer[] references products,
 );
 
 create table orders(
@@ -27,7 +27,18 @@ create table user(
   cart_id integer references cart
 );
 
+
+
+cart
+
+orders:
+order status
+customer id
+shipping status
+email status
+notes
+
 -- update product row:
 --   UPDATE products
--- SET image='https://upload.wikimedia.org/wikipedia/commons/3/38/Collapsible_top_hat_IMGP9662.jpg'
--- WHERE id=3;
+-- SET image='https://pbs.twimg.com/profile_images/489190886190755840/6Q8Xf_HJ_400x400.jpeg'
+-- WHERE id=4;
