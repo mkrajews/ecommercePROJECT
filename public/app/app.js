@@ -25,6 +25,10 @@ angular.module('app', ['ui.router'])
                 url: '/myAccount',
                 templateUrl: './app/component/myAccount/myAccount.html',
                 controller: 'accountCtrl'
+            })
+            .state('shop', {
+                url: '/#/shop',
+                tamplateUrl: './app/component/shop/shop.html'
             });
 
     });

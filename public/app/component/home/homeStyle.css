@@ -17,9 +17,8 @@
 }
 
 .prodImg:hover {
-  height: 300px;
-  width: auto;
-  /*background: gold;*/
+  /*height: 300px;
+  width: auto;*/
 }
 
 .title:hover {
