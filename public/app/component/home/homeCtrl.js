@@ -1,4 +1,11 @@
-angular.module('app').controller('homeCtrl', function($scope, homeSvc) {
+angular.module('app').controller('homeCtrl', function($scope, homeSvc, userSvc) {
+
+  var loggedIn = function(){
+    userSvc.loggedIn().then(function(res){
+      userSvc.currentUser = res.data;
+    });
+  };
+  loggedIn();
 
   $scope.getAllProducts = function() {
     homeSvc.getAllProducts()

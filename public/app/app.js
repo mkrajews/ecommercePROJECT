@@ -21,9 +21,9 @@ angular.module('app', ['ui.router'])
                 url: '/cart',
                 templateUrl: './app/component/admin/admin.html'
             })
-            .state('myAccount', {
-                url: '/myAccount',
-                templateUrl: './app/component/myAccount/myAccount.html',
+            .state('account', {
+                url: '/account',
+                templateUrl: './app/component/myAccount/account.html',
                 controller: 'accountCtrl'
             })
             .state('shop', {

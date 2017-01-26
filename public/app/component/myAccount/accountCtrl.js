@@ -1,4 +1,8 @@
-angular.module('app').controller('accountCtrl', function($scope, accountSvc) {
+angular.module('app').controller('accountCtrl', function($state, $scope, accountSvc, userSvc) {
+
+if(!userSvc.currentUser){
+  $state.go('home')
+}
 
   $scope.getCartProducts = function() {
     accountSvc.getCartProducts()
@@ -8,7 +12,6 @@ angular.module('app').controller('accountCtrl', function($scope, accountSvc) {
       });
   };
   // $scope.getCartProducts();
-
 
 
 });

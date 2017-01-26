@@ -19,12 +19,11 @@ create table orders(
   products_id integer
 );
 
-create table user(
+create table users(
   user_id serial,
-  username varchar(70),
+  displayname varchar(70),
   password text,
-  fb_id text,
-  cart_id integer references cart
+  facebookid text
 );
 
 
