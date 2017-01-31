@@ -4,12 +4,32 @@
 }
 
 #bkgrndHeader {
-  background-image: url(/assets/img/fushimi.jpg);
-  background-size: cover;
+  background-image: url(/assets/img/nekoshinjapan1.png);
   background-attachment: fixed;
-  height:70vh;
-  width:auto;
+  background-size: cover;
+  position: absolute;
+  height:800px;
+  width:100vw;
 }
+
+.title {
+  margin-top:20px;
+  float:left;
+  font-size: 30px;
+  z-index: 1;
+  position: absolute;
+  font-family: serif;
+  /*color: white;*/
+}
+
+.title:hover {
+  font-style: italic;
+}
+
+ .nav-r {
+   /*position: fixed;*/
+ }
+
 
 .prodImg {
   height: 200px;
@@ -21,10 +41,113 @@
   width: auto;*/
 }
 
-.title:hover {
-  font-style: italic;
-}
+
 
 .stuff {
   /*border: 30px;*/
+}
+p {
+  color:pink;
+}
+p:before {
+  content:'cats';
+}
+p:after {
+  content:'cute';
+}
+
+/*.cloud {*/
+   /*opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+   .cloud:hover {
+      opacity: 0.5;
+      }*/
+  /*background-image: url();
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  z-index:1;
+  position: absolute;
+  animation: fade 1.8s steps(4);
+}*/
+
+.cloud {
+  z-index:1;
+  opacity: 0.5;
+background-image: url(/assets/img/clouds.jpg);
+
+    width: 600px;
+    height: 600px;
+    /*background: white;*/
+    position :relative;
+    /*-webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 8s ;
+    box-shadow: 0 0 80px 80px white inset;
+}
+
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 600px;}
+    /*25%  {top: 50px;}
+    75%  {top: 600px}*/
+    100% {top: 0px;}
+}
+
+
+.cats {
+  /*display: inline-block;*/
+}
+
+.catbird {
+  background-image: url(/assets/img/catbirddark3.png);
+  margin-top: 120px;
+  /*display: inline-block;*/
+  margin-left: 55px;
+  width: 457px;
+  height: 307px;
+  z-index: 1;
+  position:relative;
+}
+
+.catcake {
+  background-image: url(/assets/img/catcake.png);
+  /*display: inline-block;*/
+
+  /*margin-left: 585px;*/
+  width: 421px;
+  height: 283px;
+  z-index: 1;
+  position:relative;
+}
+
+.sprites{
+  /*display: inline-block;*/
+  margin-top: 260px;
+  z-index: 1;
+  position:relative;
+  background-image: url(/assets/img/sprites.png);
+	background-position: 0 0;
+  margin-left: 1125px;
+  /*margin-left: 85px;*/
+	width: 250px;
+	height: 300px;
+  animation: play 1.8s steps(12) infinite;
+  animation-play-state: paused;
+  transition: background-image 1.4s;
+  /*animation-timing-function: steps(8);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;*/
+  /*animation-direction: alternate;*/
+}
+.sprites:hover {
+  animation-play-state: running;
+}
+
+@keyframes play {
+    0% {background-position: 0 0;}
+   100% { background-position: -3000px; }
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ecommerce Nekoshin</title>
+  <title>Nekoshin</title>
 
   <!-- angular scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
@@ -19,52 +19,38 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <!-- js scripts -->
-  <script src="app/routes.js"></script>
-  <script src="app/app.js"></script>
+<!-- css animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-  <!-- controller scripts -->
-  <script src="/app/component/home/homeCtrl.js"></script>
-  <script src="/app/component/about/abtCtrl.js"></script>
-  <script src="/app/component/shop/shopCtrl.js"></script>
-  <script src="/app/component/myAccount/accountCtrl.js"></script>
-
-  <!-- service scripts -->
-  <script src="app/component/home/homeSvc.js"></script>
-  <script src="app/component/myAccount/accountSvc.js"></script>
-  <script src="app/shared/userSvc.js"></script>
-
-
-  <!-- style links -->
-  <link href="/app/component/home/homeStyle.css" rel="stylesheet">
-  <link href="/app/component/about/about.css" rel="stylesheet">
-  <link href="/app/component/shop/shop.css" rel="stylesheet">
+<link rel="stylesheet" href="dist/styles.css">
 </head>
 
 
 <body ng-controller="homeCtrl">
 
-  <nav id="navbar-id" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
+  <!-- <nav id="navbar-id" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid"> -->
 
       <!-- Brand and toggle grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
+      <!-- <div class="navbar-header page-scroll">
         <div type="button" class="navbar-toggle cursor-crosshair" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only ">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
         </div>
 
         <h3 style="margin-top:30px; margin-bottom:30px;" class="title" ui-sref="home">NekoShin</h3>
       </div>
-      <!-- <a href="/#/shop">SHOP</a> -->
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul  class="row justify-content-around">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+        <ul  class="row justify-content-between">
           <!-- class="nav navbar-nav navbar-right" -->
 
-          <li style="margin-right:20px; margin-top:30px;"><input ng-model="productFilterText" placeholder="Search"></li>
 
 
 
+<li>
+  <h3 class="title" ui-sref="home">nekokami</h3>
+
+</li>
 
           <!-- <li class="nav-r">
             <h4 style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn">Shop</h4>
@@ -72,27 +58,27 @@
           </li> -->
 
           <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>
             <span class="tab-space"></span>
           </li>
 
           <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="account">Account</h4>
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="account">Account</h4>
             <span class="tab-space"></span>
           </li>
 
           <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">Admin Only!</h4>
+            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">Admin Only!</h4>
             <span class="tab-space"></span>
           </li>
 
         </ul>
-      </div>
-      <div class="space"></div>
+      <!-- </div>
+      <div class="space"></div> -->
       <!-- /.navbar-collapse -->
-    </div>
+    <!-- </div> -->
     <!-- /.container -->
-  </nav>
+  <!-- </nav> -->
 
 
 
@@ -111,27 +97,7 @@
   <br>
 
 
-  <!-- <div style="margin:2%;">
-    <button ng-click="getAllProducts()">Click for Products</button>
-    <br><br> -->
 
-    <!-- just filter on the name: -->
-    <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
-    <!-- <input ng-model="productFilterText" placeholder="Search"> -->
-
-    <!-- <br>
-    <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
-      <ul>
-        <h4>{{product.name}}</h4>
-        <li>Description: {{product.description}}</li>
-        <li>Price: {{product.price}}</li>
-        <li>Type: {{product.type}}</li>
-      </ul>
-      <button ng-click="addToCart(product)">Add to Cart</button>
-      <br><br><br>
-    </div>
-    <br>
-  </div> -->
 
 
 
@@ -147,17 +113,12 @@
   <br><br><br><br>
   <br><br><br><br>
   <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
 
-  <p id="/#/shop">Here id</p>
+  <!-- <p id="/#/shop">Here id</p> -->
 
 
 
+  <script src="dist/js/bundle.js"></script>
 
 </body>
 

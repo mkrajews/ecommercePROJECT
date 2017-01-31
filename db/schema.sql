@@ -26,6 +26,10 @@ create table users(
   facebookid text
 );
 
+orderline
+add products to cart:
+req.session.cart = []
+push the body
 
 
 cart

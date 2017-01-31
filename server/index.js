@@ -10,6 +10,12 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
+const gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps');
+
+const CacheBuster = require('gulp-cachebust');
+const cachebust = new CacheBuster();
 
 
 
@@ -46,7 +52,7 @@ passport.deserializeUser(function(obj, done) {
   db.getUserByFacebookId([obj.facebookid], function (err, user) {
     done(null, obj);
   });
-})
+});
 // sessions end
 
 // facebook auth part 1
