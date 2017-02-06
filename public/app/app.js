@@ -19,7 +19,7 @@ angular.module('app', ['ui.router'])
             })
             .state('cart', {
                 url: '/cart',
-                templateUrl: './app/component/admin/admin.html'
+                templateUrl: './app/component/cart/cart.html'
             })
             .state('account', {
                 url: '/account',

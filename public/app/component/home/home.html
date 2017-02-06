@@ -1,6 +1,11 @@
+<div id="bkgrndHeader">
+<br><br><br>
+  
 
 
-<div id="bkgrndHeader"></div>
+
+
+</div>
 <!-- <h3 class="title">nekokami</h3> -->
 
 <!-- <div class="animated fade-out-left"></div> -->
@@ -13,7 +18,7 @@
   <div class="sprites">
   </div>
   <br><br>
-  <div class="catbird"></div>
+  <!-- <div class="catbird"></div> -->
 </div>
 <br><br>
 <!-- <div class="container">
@@ -31,54 +36,135 @@
   </div>
 </div> -->
 <br><br><br>
-<div >
-<p>
+<div>
+  <!-- <p>
   are
-</p>
+</p> -->
 
 
-<br>
-<h2 style="text-align:center;">SHOP HERE</h2>
-<br>
-<div style="text-align:center; margin-top:30px;"><input ng-model="productFilterText" placeholder="Search"></div>
-<br>
-<div style="margin:2%; text-align:center;">
-  <!-- <button ng-click="getAllProducts()">Click for Products</button> -->
-  <br><br>
-  <!-- just filter on the name: -->
-  <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
-  <!-- <input ng-model="productFilterText" placeholder="Search"> -->
   <br>
-  <div class="container">
-    <div class="row justify-content-around">
-  <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
-    <ul>
-      <img class="prodImg" src="{{product.image}}">
-      <h4>{{product.name}}</h4>
-      <li>Description: {{product.description}}</li>
-      <li>Price: {{product.price}}</li>
-      <li>Type: {{product.type}}</li>
-    </ul>
-    <button ng-click="addToCart(product)">Add to Cart</button>
-    <br><br><br>
-
-  </div>
+  <h2 style="text-align:center;">SHOP HERE</h2>
   <br>
+  <div style="text-align:center; margin-top:30px;"><input ng-model="productFilterText" placeholder="Search"></div>
+  <br>
+  <div style=" text-align:center;">
+    <!-- <button ng-click="getAllProducts()">Click for Products</button> -->
+    <br><br>
+    <!-- just filter on the name: -->
+    <!-- <input ng-model="productFilter.name" placeholder="Search by Name"> -->
+    <!-- <input ng-model="productFilterText" placeholder="Search"> -->
+    <br>
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
+          <ul>
+            <img class="prodImg" src="{{product.image}}">
+            <h4>{{product.name}}</h4>
+            <li>Description: {{product.description}}</li>
+            <li>Price: {{product.price}}</li>
+            <li>Type: {{product.type}}</li>
+          </ul>
+          <button class="centerbtn" ng-click="addToCart(product)">Add to Cart</button>
 
-  <div class="catcake"></div>
+          <div class="simpleCart_shelfItem">
 
-  </div>
-</div>
-</div>
+          <div class="info">
+          <div class="pull-right styl-price">
+            <p><a href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">{{product.price}}</span></a></p>
+          </div>
+        </div>
+      </div>
 
-<!-- ROW EXAMPLE -->
-<!-- <div class="container">
-<div class="row justify-content-around">
-    <div class="col-4">
-      One of two columns
+
+          <br><br><br>
+
+        </div>
+        <br>
+
+        <!-- <div class="catcake"></div> -->
+
+      </div>
     </div>
-    <div class="col-4">
-      One of two columns
-    </div>
   </div>
-</div> -->
+
+
+
+
+
+
+
+  <!-- <div class="shop-grid">
+    <div class="container">
+      <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
+        <!-- normal -->
+        <!-- <div class="ih-item square effect3 bottom_to_top">
+          <div class="bottom-2-top">
+            <div class="img"><img src="images/grid4.jpg" alt="/" class="img-responsive gri-wid"></div>
+            <div class="info">
+              <div class="pull-left styl-hdn">
+                <h3>style 01</h3>
+              </div>
+              <div class="pull-right styl-price">
+                <p><a href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$190</span></a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end normal -->
+        <!-- <div class="quick-view">
+          <a href="single.html">Quick view</a>
+        </div>
+      </div>
+      <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
+        <!-- normal -->
+        <!-- <div class="ih-item square effect3 bottom_to_top">
+          <div class="bottom-2-top">
+            <div class="img"><img src="images/grid6.jpg" alt="/" class="img-responsive gri-wid"></div>
+            <div class="info">
+              <div class="pull-left styl-hdn">
+                <h3>style 01</h3>
+              </div>
+              <div class="pull-right styl-price">
+                <p><a href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$190</span></a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end normal -->
+        <!-- <div class="quick-view">
+          <a href="single.html">Quick view</a>
+        </div>
+      </div>
+      <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
+        <!-- normal -->
+        <!-- <div class="ih-item square effect3 bottom_to_top">
+          <div class="bottom-2-top">
+            <div class="img"><img src="images/grid3.jpg" alt="/" class="img-responsive gri-wid"></div>
+            <div class="info">
+              <div class="pull-left styl-hdn">
+                <h3>style 01</h3>
+              </div>
+              <div class="pull-right styl-price">
+                <p><a href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$190</span></a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end normal -->
+        <!-- <div class="quick-view">
+          <a href="single.html">Quick view</a>
+        </div>
+      </div>
+      <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
+
+        <!-- end normal -->
+        <!-- <div class="quick-view">
+          <a href="single.html">Quick view</a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div> -->

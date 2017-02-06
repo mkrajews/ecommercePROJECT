@@ -44,15 +44,15 @@
 .stuff {
   /*border: 30px;*/ }
 
-p {
-  color: pink; }
-
+/*p {
+  color:pink;
+}
 p:before {
-  content: 'cats'; }
-
+  content:'cats';
+}
 p:after {
-  content: 'cute'; }
-
+  content:'cute';
+}*/
 /*.cloud {*/
 /*opacity: 1;
    transition: opacity .25s ease-in-out;
@@ -115,14 +115,14 @@ p:after {
 
 .sprites {
   /*display: inline-block;*/
-  margin-top: 200px;
+  margin-top: 350px;
   text-align: center;
   z-index: 1;
   position: relative;
   background-image: url(/assets/img/sprites.png);
   background-position: 0 0;
   /*margin-left: 1125px;*/
-  margin-left: 585px;
+  margin-left: 100px;
   width: 250px;
   height: 300px;
   animation: play 1.8s steps(12) infinite;
@@ -141,6 +141,12 @@ p:after {
     background-position: 0 0; }
   100% {
     background-position: -3000px; } }
+
+ul {
+  list-style-type: none; }
+
+.centerbtn {
+  text-align: center; }
 
 
 /*# sourceMappingURL=maps/styles.css.map */

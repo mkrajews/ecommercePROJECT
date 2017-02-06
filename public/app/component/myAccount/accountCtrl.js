@@ -1,8 +1,8 @@
 angular.module('app').controller('accountCtrl', function($state, $scope, accountSvc, userSvc) {
 
-if(!userSvc.currentUser){
-  $state.go('home')
-}
+// if(!userSvc.currentUser){
+//   $state.go('home')
+// }
 
   $scope.getCartProducts = function() {
     accountSvc.getCartProducts()

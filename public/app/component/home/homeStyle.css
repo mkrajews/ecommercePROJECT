@@ -46,7 +46,7 @@
 .stuff {
   /*border: 30px;*/
 }
-p {
+/*p {
   color:pink;
 }
 p:before {
@@ -54,7 +54,7 @@ p:before {
 }
 p:after {
   content:'cute';
-}
+}*/
 
 /*.cloud {*/
    /*opacity: 1;
@@ -126,14 +126,14 @@ background-image: url(/assets/img/clouds.jpg);
 
 .sprites{
   /*display: inline-block;*/
-  margin-top: 200px;
+  margin-top: 350px;
   text-align: center;
   z-index: 1;
   position:relative;
   background-image: url(/assets/img/sprites.png);
 	background-position: 0 0;
   /*margin-left: 1125px;*/
-  margin-left: 585px;
+  margin-left: 100px;
 	width: 250px;
 	height: 300px;
   animation: play 1.8s steps(12) infinite;
@@ -152,3 +152,50 @@ background-image: url(/assets/img/clouds.jpg);
     0% {background-position: 0 0;}
    100% { background-position: -3000px; }
 }
+
+ul {
+  list-style-type: none;
+}
+.centerbtn {
+  text-align: center;
+}
+
+/*#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+
+#login-dp .help-block{
+    font-size:12px
+}
+
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;}*/

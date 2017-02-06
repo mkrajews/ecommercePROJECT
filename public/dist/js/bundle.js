@@ -16,7 +16,7 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
         templateUrl: './app/component/admin/admin.html'
     }).state('cart', {
         url: '/cart',
-        templateUrl: './app/component/admin/admin.html'
+        templateUrl: './app/component/cart/cart.html'
     }).state('account', {
         url: '/account',
         templateUrl: './app/component/myAccount/account.html',

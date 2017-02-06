@@ -14,7 +14,7 @@ angular.module('app').controller('homeCtrl', function($scope, homeSvc, userSvc) 
           $scope.products = response;
       });
   };
-  $scope.getAllProducts(); 
+  $scope.getAllProducts();
 
 
 

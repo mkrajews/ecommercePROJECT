@@ -19,10 +19,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<!-- css animate -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- plugin items -->
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideURLbar, 0);
+    }, false);
 
-<link rel="stylesheet" href="dist/styles.css">
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!--fonts-->
+  <link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  <!--shop-kart-js-->
+  <script src="js/simpleCart.min.js"></script>
+  <!--default-js-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <!--bootstrap-js-->
+  <script src="js/bootstrap.min.js"></script>
+
+
+  <!-- css animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <link rel="stylesheet" href="dist/styles.css">
 </head>
 
 
@@ -41,43 +61,49 @@
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-        <ul  class="row justify-content-between">
-          <!-- class="nav navbar-nav navbar-right" -->
+
+
+      <!-- <ul  class="row justify-content-between"> -->
+      <!-- class="nav navbar-nav navbar-right" -->
 
 
 
-
-<li>
+      <!-- <li>
   <h3 class="title" ui-sref="home">nekokami</h3>
 
-</li>
+</li> -->
 
-          <!-- <li class="nav-r">
+      <!-- <li class="nav-r">
             <h4 style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:30px;" class="hvr-float-shadow cursor-crosshair" class="btn">Shop</h4>
             <span class="tab-space"></span>
           </li> -->
 
-          <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>
-            <span class="tab-space"></span>
-          </li>
 
-          <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="account">Account</h4>
-            <span class="tab-space"></span>
-          </li>
 
-          <li class="nav-r">
-            <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">Admin Only!</h4>
-            <span class="tab-space"></span>
-          </li>
 
-        </ul>
+      <!-- <ul class="row justify-content-between">
+        <li class="nav-r">
+          <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="about">About</h4>
+          <span class="tab-space"></span>
+        </li>
+
+        <li class="nav-r">
+          <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="account">Account</h4>
+          <span class="tab-space"></span>
+        </li>
+
+        <li class="nav-r">
+          <h4 id="navlink" style="font-family:delhi; color: rgba(217, 138, 108, 0.5); margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">Admin Only!</h4>
+          <span class="tab-space"></span>
+        </li>
+      </ul> -->
+
+
       <!-- </div>
       <div class="space"></div> -->
       <!-- /.navbar-collapse -->
-    <!-- </div> -->
-    <!-- /.container -->
+      <!-- </div> -->
+      <!-- /.container -->
   <!-- </nav> -->
 
 
@@ -94,8 +120,89 @@
       <div>
         <a ui-sref="admin">Admin Only!</a>
       </div> -->
+      <div>
+        <a ui-sref="account">My Account</a>
+      </div>
   <br>
 
+  <!-- sample header -->
+  <div class="header">
+    <div class="container">
+      <div class="header-top navbar-fixed-top">
+        <div class="login-bars navbar-right text-muted credit">
+
+          <a class="btn btn-default log-bar" href="register.html" role="button">Sign up</a>
+          <a class="btn btn-default log-bar" style="margin-right:55px;" href="signup.html" role="button">Login</a>
+
+          <div class="cart box_1">
+            <a href="checkout.html">
+              <h3>
+                                <div class="total">
+<span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div></h3>
+            </a>
+            <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+
+        <!-- try out -->
+        <ul class="row justify-content-left text-muted credit" style="list-style-type:none;">
+          <li class="nav-r">
+            <h4 id="navlink" style="font-family:delhi;  margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair " class="btn" ui-sref="about">ABOUT</h4>
+            <span class="tab-space"></span>
+          </li>
+
+          <li class="nav-r">
+            <h4 id="navlink" style="font-family:delhi;  margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="account">ACCOUNT</h4>
+            <span class="tab-space"></span>
+          </li>
+
+
+        </ul>
+        <!-- color: rgba(217, 138, 108, 0.5); -->
+        <!-- try out ends -->
+
+        <div class="clearfix"></div>
+      </div>
+      <!---menu-----bar--->
+      <div class="header-botom">
+        <!-- <div class="content white">
+                    <nav class="navbar navbar-default nav-menu" role="navigation"> -->
+        <!-- <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div> -->
+        <!-- <div class="clearfix"></div> -->
+        <!--/.navbar-header-->
+
+        <!-- <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav nav-font">
+                                <li class="dropdown">
+                                    <a href="#">Shop<b ></b></a>
+                                <li><a href="contact.html">Contact</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+
+                            <div class="clearfix"></div>
+                        </div> -->
+        <!--/.navbar-collapse-->
+        <!-- <div class="clearfix"></div>
+                    </nav> -->
+        <!--/.navbar-->
+        <!-- <div class="clearfix"></div> -->
+      </div>
+      <!--/.content--->
+    </div>
+    <!--header-bottom-->
+  </div>
+  </div>
+  <div class="header-end">
+    <!-- sample header ends -->
 
 
 
@@ -103,22 +210,44 @@
 
 
 
-  <!-- VIEW STATES -->
-  <ui-view></ui-view>
+    <!-- VIEW STATES -->
+    <ui-view></ui-view>
 
 
 
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
 
-  <!-- <p id="/#/shop">Here id</p> -->
+    <!-- <p id="/#/shop">Here id</p> -->
+
+<!-- <footer>
+  <li class="nav-r " style="list-style-type: none;">
+    <h4 id="navlink" style="font-family:delhi;  margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair" class="btn" ui-sref="admin">ADMIN Only!</h4>
+    <span class="tab-space"></span>
+  </li>
+</footer> -->
+
+<div id="footer">
+  <div class="container text-center">
+    <!-- <p class="text-muted credit" style="color:#fff">ADMIN Only!</p> -->
+    <h4 id="navlink" style="font-family:delhi; color:#fff;  margin-right:20px; margin-top:20px;" class="hvr-float-shadow cursor-crosshair text-muted credit" class="btn" ui-sref="admin">ADMIN Only!</h4>
+  </div>
+</div>
 
 
 
-  <script src="dist/js/bundle.js"></script>
+
+
+
+
+
+
+
+
+    <script src="dist/js/bundle.js"></script>
 
 </body>
 

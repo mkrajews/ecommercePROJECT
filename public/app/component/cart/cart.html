@@ -1,5 +1,24 @@
 <div>
-  <h3>My Cart</h3>
+  <br><br><br>
+  <h3>Inventory</h3>
+  <br>
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
+        <ul>
+          <img class="prodImg" src="{{product.image}}">
+          <h4>{{product.name}}</h4>
+          <li>Description: {{product.description}}</li>
+          <li>Price: {{product.price}}</li>
+          <li>Type: {{product.type}}</li>
+        </ul>
+        <button class="centerbtn">Remove from Inventory</button>
+        <button class="centerbtn">Edit</button>
 
-  
+        <br><br><br>
+
+      </div>
+    </div>
+  </div>
+
 </div>
