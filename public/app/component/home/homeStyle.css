@@ -1,3 +1,29 @@
+.boxlink {
+  border: 2px solid black;
+   color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  margin: 45px 20px;
+  padding: 10px 35px;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s linear 0s;
+  width: auto;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.boxlink:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: !important none;
+}
 
 #shop {
   color: purple;
@@ -9,8 +35,8 @@
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
-  height:800px;
-  width:100vw;
+  height: 800px;
+  width: 100vw;
 }
 
 .title {
@@ -26,10 +52,9 @@
   font-style: italic;
 }
 
- .nav-r {
-   /*position: fixed;*/
- }
-
+.nav-r {
+  /*position: fixed;*/
+}
 
 .prodImg {
   height: 200px;
@@ -41,11 +66,11 @@
   width: auto;*/
 }
 
-
-
 .stuff {
   /*border: 30px;*/
 }
+
+
 /*p {
   color:pink;
 }
@@ -56,8 +81,11 @@ p:after {
   content:'cute';
 }*/
 
+
 /*.cloud {*/
-   /*opacity: 1;
+
+
+/*opacity: 1;
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
@@ -65,7 +93,9 @@ p:after {
    .cloud:hover {
       opacity: 0.5;
       }*/
-  /*background-image: url();
+
+
+/*background-image: url();
   height: 400px;
   width: 400px;
   background-color: white;
@@ -75,28 +105,31 @@ p:after {
 }*/
 
 .cloud {
-  z-index:1;
+  z-index: 1;
   opacity: 0.5;
-background-image: url(/assets/img/clouds.jpg);
-
-    width: 600px;
-    height: 600px;
-    /*background: white;*/
-    position :relative;
-    /*-webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
-    animation: mymove 8s ;
-    box-shadow: 0 0 80px 80px white inset;
+  background-image: url(/assets/img/clouds.jpg);
+  width: 600px;
+  height: 600px;
+  /*background: white;*/
+  position: relative;
+  /*-webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 8s;
+  box-shadow: 0 0 80px 80px white inset;
 }
 
 
 /* Standard syntax */
-@keyframes mymove {
-    0%   {top: 600px;}
-    /*25%  {top: 50px;}
-    75%  {top: 600px}*/
-    100% {top: 0px;}
-}
 
+@keyframes mymove {
+  0% {
+    top: 600px;
+  }
+  /*25%  {top: 50px;}
+    75%  {top: 600px}*/
+  100% {
+    top: 0px;
+  }
+}
 
 .cats {
   /*display: inline-block;*/
@@ -110,32 +143,31 @@ background-image: url(/assets/img/clouds.jpg);
   width: 457px;
   height: 307px;
   z-index: 1;
-  position:relative;
+  position: relative;
 }
 
 .catcake {
   background-image: url(/assets/img/catcake.png);
   /*display: inline-block;*/
-
   /*margin-left: 585px;*/
   width: 421px;
   height: 283px;
   z-index: 1;
-  position:relative;
+  position: relative;
 }
 
-.sprites{
+.sprites {
   /*display: inline-block;*/
   margin-top: 350px;
   text-align: center;
   z-index: 1;
-  position:relative;
+  position: relative;
   background-image: url(/assets/img/sprites.png);
-	background-position: 0 0;
+  background-position: 0 0;
   /*margin-left: 1125px;*/
   margin-left: 100px;
-	width: 250px;
-	height: 300px;
+  width: 250px;
+  height: 300px;
   animation: play 1.8s steps(12) infinite;
   animation-play-state: paused;
   transition: background-image 1.4s;
@@ -144,21 +176,28 @@ background-image: url(/assets/img/clouds.jpg);
   animation-iteration-count: infinite;*/
   /*animation-direction: alternate;*/
 }
+
 .sprites:hover {
   animation-play-state: running;
 }
 
 @keyframes play {
-    0% {background-position: 0 0;}
-   100% { background-position: -3000px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3000px;
+  }
 }
 
 ul {
   list-style-type: none;
 }
+
 .centerbtn {
   text-align: center;
 }
+
 
 /*#login-dp{
     min-width: 250px;

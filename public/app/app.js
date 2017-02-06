@@ -26,9 +26,9 @@ angular.module('app', ['ui.router'])
                 templateUrl: './app/component/myAccount/account.html',
                 controller: 'accountCtrl'
             })
-            .state('shop', {
-                url: '/#/shop',
-                tamplateUrl: './app/component/shop/shop.html'
+            .state('login', {
+                url: '/login',
+                tamplateUrl: './app/component/login/login.html'
             });
 
     });

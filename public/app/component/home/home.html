@@ -1,6 +1,6 @@
 <div id="bkgrndHeader">
-<br><br><br>
-  
+  <br><br><br>
+
 
 
 
@@ -42,6 +42,8 @@
 </p> -->
 
 
+
+
   <br>
   <h2 style="text-align:center;">SHOP HERE</h2>
   <br>
@@ -56,24 +58,35 @@
     <br>
     <div class="container">
       <div class="row justify-content-around">
-        <div class="stuff" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
+        <div class="stuff col-md-3" ng-repeat="product in products | filter: productFilterText | orderBy: 'price'">
           <ul>
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
             <img class="prodImg" src="{{product.image}}">
+</a>
+
+
+
+
+
+
             <h4>{{product.name}}</h4>
             <li>Description: {{product.description}}</li>
-            <li>Price: {{product.price}}</li>
-            <li>Type: {{product.type}}</li>
+            <!-- <li>Type: {{product.type}}</li> -->
           </ul>
-          <button class="centerbtn" ng-click="addToCart(product)">Add to Cart</button>
+          <!-- <button class="centerbtn" ng-click="addToCart(product)">Add to Cart</button> -->
+
 
           <div class="simpleCart_shelfItem">
 
-          <div class="info">
-          <div class="pull-right styl-price">
-            <p><a href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">{{product.price}}</span></a></p>
+            <div class="info">
+              <div class="pull-right styl-price">
+                <p><a href="#" class="item_add"><span ></span> <span class="item_price">{{product.price}}</span></a></p>
+
+
+                <a href="" class="boxlink item_add item_price" ng-click="addToCart(product)">Add to Cart</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
 
           <br><br><br>
@@ -91,13 +104,62 @@
 
 
 
+  <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 ">
+                <div class="modal-body" style="text-align:center;">
+                  <!-- Project Details Go Here -->
+                  <h2 >Happy Birthday!</h2>
+                  <p class="item-intro text-muted">Someone is having a birthday? They'll love this card! Put some money in it and they'll love it more!</p>
+                  <img class="img-centered" style="height:450px; text-align:center;" src="https://im1.shutterfly.com/ng/services/mediarender/THISLIFE/020098750953/media/102460086922/medium/1486357930816/enhance">
+                  <!-- <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt=""> -->
+                  <p>Group project focusing on developing skills and researching new areas, including D3.js and Optical character recognition (OCR) technologies.
+                    <br>
+
+                  </p>
+
+                  <ul class="list-inline">
+                    <li>Date: December 2016</li>
+                    <li>Client: DevMountain Group Project</li>
+                    <li>Category: Project; Ionic</li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- <div class="shop-grid">
     <div class="container">
       <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
-        <!-- normal -->
-        <!-- <div class="ih-item square effect3 bottom_to_top">
+  <!-- normal -->
+  <!-- <div class="ih-item square effect3 bottom_to_top">
           <div class="bottom-2-top">
             <div class="img"><img src="images/grid4.jpg" alt="/" class="img-responsive gri-wid"></div>
             <div class="info">
@@ -111,14 +173,14 @@
             </div>
           </div>
         </div> -->
-        <!-- end normal -->
-        <!-- <div class="quick-view">
+  <!-- end normal -->
+  <!-- <div class="quick-view">
           <a href="single.html">Quick view</a>
         </div>
       </div>
       <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
-        <!-- normal -->
-        <!-- <div class="ih-item square effect3 bottom_to_top">
+  <!-- normal -->
+  <!-- <div class="ih-item square effect3 bottom_to_top">
           <div class="bottom-2-top">
             <div class="img"><img src="images/grid6.jpg" alt="/" class="img-responsive gri-wid"></div>
             <div class="info">
@@ -132,14 +194,14 @@
             </div>
           </div>
         </div> -->
-        <!-- end normal -->
-        <!-- <div class="quick-view">
+  <!-- end normal -->
+  <!-- <div class="quick-view">
           <a href="single.html">Quick view</a>
         </div>
       </div>
       <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
-        <!-- normal -->
-        <!-- <div class="ih-item square effect3 bottom_to_top">
+  <!-- normal -->
+  <!-- <div class="ih-item square effect3 bottom_to_top">
           <div class="bottom-2-top">
             <div class="img"><img src="images/grid3.jpg" alt="/" class="img-responsive gri-wid"></div>
             <div class="info">
@@ -153,15 +215,15 @@
             </div>
           </div>
         </div> -->
-        <!-- end normal -->
-        <!-- <div class="quick-view">
+  <!-- end normal -->
+  <!-- <div class="quick-view">
           <a href="single.html">Quick view</a>
         </div>
       </div>
       <div class="col-md-4 grid-stn simpleCart_shelfItem"> -->
 
-        <!-- end normal -->
-        <!-- <div class="quick-view">
+  <!-- end normal -->
+  <!-- <div class="quick-view">
           <a href="single.html">Quick view</a>
         </div>
       </div>

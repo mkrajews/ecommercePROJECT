@@ -21,9 +21,9 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
         url: '/account',
         templateUrl: './app/component/myAccount/account.html',
         controller: 'accountCtrl'
-    }).state('shop', {
-        url: '/#/shop',
-        tamplateUrl: './app/component/shop/shop.html'
+    }).state('login', {
+        url: '/login',
+        tamplateUrl: './app/component/login/login.html'
     });
 });
 'use strict';
@@ -95,10 +95,13 @@ angular.module('app').service('homeSvc', function ($http) {
 });
 'use strict';
 
+angular.module('app').controller('shopCtrl', function ($scope) {});
+'use strict';
+
 angular.module('app').controller('accountCtrl', function ($state, $scope, accountSvc, userSvc) {
 
   if (!userSvc.currentUser) {
-    $state.go('home');
+    $state.go('login');
   }
 
   $scope.getCartProducts = function () {
@@ -124,9 +127,6 @@ angular.module('app').service('accountSvc', function ($http) {
     });
   };
 });
-'use strict';
-
-angular.module('app').controller('shopCtrl', function ($scope) {});
 // angular.module('app')
 "use strict";
 //# sourceMappingURL=bundle.js.map

@@ -7,6 +7,30 @@
   font-size: 15px;
   font-weight: bold; }
 
+.boxlink {
+  border: 2px solid black;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  margin: 45px 20px;
+  padding: 10px 35px;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s linear 0s;
+  width: auto;
+  cursor: pointer;
+  z-index: 999; }
+
+.boxlink:hover {
+  background: black;
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: !important none; }
+
 #shop {
   color: purple; }
 
@@ -147,6 +171,46 @@ ul {
 
 .centerbtn {
   text-align: center; }
+
+/*#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+
+#login-dp .help-block{
+    font-size:12px
+}
+
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;}*/
 
 
 /*# sourceMappingURL=maps/styles.css.map */
